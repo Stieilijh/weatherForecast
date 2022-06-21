@@ -8,7 +8,7 @@ window.onload = () => {
     let APIkey = "328d9347e31008ec5c5155528274de7b";
     let dataObj;
     const data = fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=${APIkey}`,
+      `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=${APIkey}`,
       { mode: "cors" }
     )
       .then((response) => {
